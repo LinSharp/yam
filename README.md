@@ -105,7 +105,7 @@ Extended types are types, that need references to a custom function for decoding
 
 ### Examples
 In examples, each block is considered a file. Yam files have .yam extension.  
-Base indent can contain either a list or a hashtable/dictionary, can't be mixed.  
+Base indent can contain either a list or a hashtable/dictionary, can't be mixed. Indent is 2 spaces.  
 
 Base list:
 ```
