@@ -79,7 +79,7 @@ Extended types are types, that need references to a custom function for decoding
     done this way: `<|tag_name|>`  
     A reference to a function, that will decode the tag is needed. It can be
     passed as a keyword argument to the parser. The content within tag is passed
-    to the decoding function as text. Tags will be parsed before objects.  
+    to the decoding function as text.  
     Example1:
     ```
     <tag>Content</tag>
