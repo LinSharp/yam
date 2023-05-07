@@ -42,8 +42,8 @@ Yam is a tuber.
     ```
 
 - List - A list consists of items of any type. List items have to prepend
-    a dash "-".  
-    Example:
+    a dash "-". For listing items in a single line, seperate items with a bar "|".  
+    Example1:
     ```
     - A
     - list
@@ -52,6 +52,18 @@ Yam is a tuber.
       - list
       - of
       - items
+    - items
+    ```
+    Example2:
+    ```
+    A | list | of | items
+    ```
+    Example3:
+    ```
+    - A
+    - list
+    - of
+    --- inner | list | of | items
     - items
     ```
 
@@ -137,6 +149,7 @@ More complex:
 - background:
     svg: <load>background.svg</load>
     transparency: 60%
+    color: 255|255|255
 - !Display
     menu: <load>pages/index.html</load>
     options: <load>pages/options.html</load>
