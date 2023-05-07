@@ -1,5 +1,5 @@
 # Yam
-## A human readable configuration language.
+## A simple human readable configuration language.
 
 Yam is a tuber.
 
