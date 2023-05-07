@@ -65,7 +65,7 @@ Yam is a tuber.
     - A
     - list
     - of
-    --- inner | list | of | items
+    - inner | list | of | items
     - items
     ```
 
