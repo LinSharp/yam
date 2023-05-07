@@ -125,6 +125,8 @@ More complex:
 ```
 ~~ Configuring display.
 - <|time|>
+- version:
+    "0.1.2"
 - background:
     svg: <load>background.svg</load>
     transparency: 60%
