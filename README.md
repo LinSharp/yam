@@ -84,7 +84,7 @@ Extended types are types, that need references to a custom function for decoding
     ```
     <tag>Content</tag>
     ```
-    Examle2:
+    Example2:
     ```
     <|tag|>
     ```
