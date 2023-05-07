@@ -131,7 +131,7 @@ More complex:
 - !Display
     menu: <load>pages/index.html</load>
     options: <load>pages/options.html</load>
-    log_path: "logs/display.log"
+    log_path: logs/display.log
     settings:
       Width: 1920
       height: 1080
