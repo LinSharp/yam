@@ -17,7 +17,9 @@ Yam is a tuber.
     `123` is a number/integer  
     `3.14` is a number/float  
     `50%` is converted to a number/float  
-    `1/4` is  converted to a number/float 
+    `1/4` is  converted to a number/float  
+    `0x1B13` is converted from hexadecimal to number  
+    `0b0001` is converted from binary to number
 
 - Text - Everything that starts with a letter or a symbol, will be consigered as text.
     It is possible to make everything into text, if it's put in double quotes.  
