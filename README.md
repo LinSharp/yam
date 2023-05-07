@@ -10,9 +10,9 @@ Yam is a tuber.
 - Comments - Start with double tilde "\~\~". Everything after \~\~ will be ignored.
     Example: `~~ This is a comment`  
 - Number - Everything that starts with a digit will be considered a number.
-    If programming language distinguishes, it will be further split in integer
+    If programming language distinguishes, it will be further split to integer
     and float/double. Float is a number with a decimal point.  
-    Examples:
+    Examples:  
     `123` is a number/integer  
     `3.14` is a number/float  
     `50%` is converted to a number/float 
