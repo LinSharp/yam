@@ -92,7 +92,8 @@ Extended types are types, that need references to a custom function for decoding
     or
     `<time>24:59:59.999</time>`
     or
-    `<time>1991-08-22T24:59:59.999</time>`
+    `<time>1991-08-22T24:59:59.999</time>`  
+    `<|time|>` - get current ISO time.
 
 
 ### Examples
@@ -123,7 +124,7 @@ Fruits:
 More complex:
 ```
 ~~ Configuring display.
-- <|timestamp|>
+- <|time|>
 - background:
     svg: <load>background.svg</load>
     transparency: 60%
