@@ -9,17 +9,22 @@ Yam is a tuber.
 
 - Comments - Start with double tilde "\~\~". Everything after \~\~ will be ignored.
     Example: `~~ This is a comment`  
+
 - Number - Everything that starts with a digit will be considered a number.
     If programming language distinguishes, it will be further split to integer
     and float/double. Float is a number with a decimal point.  
     Examples:  
     `123` is a number/integer  
     `3.14` is a number/float  
-    `50%` is converted to a number/float 
+    `50%` is converted to a number/float  
+    `1/4` is  converted to a number/float 
+
 - Text - Everything that starts with a letter or a symbol, will be consigered as text.
     It is possible to make everything into text, if it's put in double quotes.  
     Example: `"This is text. 3.14 is also considered as text"`
+
 - Boolean - A boolean is either `true` or `false`. Have to be lowercase.
+
 - Hashtable/Dictionary - Dictionary consists of key, value pairs, where key is
     anything, that starts with a character and end in a column ":".
     Value can be any other type.  
@@ -35,6 +40,7 @@ Yam is a tuber.
       inner_key2:
         value2
     ```
+
 - List - A list consists of items of any type. List items have to prepend
     a dash "-".  
     Example:
@@ -67,6 +73,7 @@ Extended types are types, that need references to a custom function for decoding
       variable2: value2
       variable3: value3
     ```
+
 - Tag - A tag is made by starting with `<tag_name>`, closing with `</tag_name>`,
     and putting content in the middle. Tags that do not need content can be
     done this way: `<|tag_name|>`  
