@@ -59,7 +59,7 @@ Yam is a tuber.
 
 Extended types are types, that need references to a custom function for decoding.
 
-- Object - An object is represented as a dictionary under base key that starts
+- Object - An object is represented similary to dictionary. Base key that starts
     with an exclamation mark - "!". Inner dictionary key names will be
     considered as member variable names of the object. Unlike a dictionary base
     key does not end with a column - ":".  
