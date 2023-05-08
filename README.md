@@ -5,6 +5,26 @@ Yam is a tuber.
 
 ## Syntax
 
+```
+~~ Configuring display.
+- <|time|>
+- version:
+    "0.1.2"
+- background:
+    svg: <load>background.svg</load>
+    transparency: 60%
+    color: 255|255|255
+- !Display
+    menu: <load>pages/index.html</load>
+    options: <load>pages/options.html</load>
+    log_path: logs/display.log
+    settings:
+      width: 1920
+      height: 1080
+      mode: fullscreen
+    show_hidden: false
+```
+
 ### Base Types
 
 - Comments - Start with double tilde "\~\~". Everything after \~\~ will be ignored.
@@ -44,7 +64,7 @@ Yam is a tuber.
     ```
 
 - List - A list consists of items of any type. List items have to prepend
-    a dash "-". For listing items in a single line, seperate items with a bar "|".  
+    a dash and space "- ". For listing items in a single line, seperate items with a bar "|".  
     Example1:
     ```
     - A
@@ -140,24 +160,4 @@ Fruits:
     Tasty
   Pears:
     Okay
-```
-
-More complex:
-```
-~~ Configuring display.
-- <|time|>
-- version:
-    "0.1.2"
-- background:
-    svg: <load>background.svg</load>
-    transparency: 60%
-    color: 255|255|255
-- !Display
-    menu: <load>pages/index.html</load>
-    options: <load>pages/options.html</load>
-    log_path: logs/display.log
-    settings:
-      Width: 1920
-      height: 1080
-      mode: fullscreen
 ```
