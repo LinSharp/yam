@@ -108,7 +108,7 @@ Yam is a tuber.
 
 ### Extended types
 
-Extended types are types, that need references to a custom function for decoding.
+Extended types are types, that need references to a custom function or class for decoding.
 
 - Object - An object is represented similary to dictionary. Base key that starts
     with an exclamation mark - "!". Inner dictionary key names will be
