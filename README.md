@@ -31,12 +31,15 @@ Yam is a tuber.
     **Example:**  
     `~~ This is a comment`
 
-- Number - Everything that starts with a digit will be considered a number.
-    If programming language distinguishes, it will be further split to integer
+- Number - Everything that starts with a digit or a dash "-" (for negative numbers)
+    will be considered a number. There can't be a space between a dash and a number.
+    If programming language distinguishes, number will be further split to integer
     and float/double. Float is a number with a decimal point.  
     **Examples:**  
     `123` is a number/integer  
+    `-456` is a negative number/integer  
     `3.14` is a number/float  
+    `-2.718` is a negative number/float  
     `50%` is converted to a number/float  
     `1/4` is  converted to a number/float  
     `0x1B13` is converted from hexadecimal to number  
