@@ -42,8 +42,21 @@ Yam is a tuber.
     `0b0001` is converted from binary to number
 
 - Text - Everything that starts with a letter or a symbol, will be consigered as text.
-    It is possible to make everything into text, if it's put in double quotes.  
-    Example: `"This is text. 3.14 is also considered as text"`
+    It is possible to make everything into text, if it's put in double quotes.
+    To set text over multiple lines, put it inside tripple quotes. Multi line text
+    has to be written in the same indent level. as the quotes. All characters from the indent
+    towards base indent, will be removed.  
+    Example1:  
+    `"This is text. 3.14 is also considered as text"`  
+    Example2:
+    ```
+    """
+    This text
+    is written
+    over multiple
+    lines
+    """
+    ```
 
 - Boolean - A boolean is either `true` or `false`. Have to be lowercase.
 
