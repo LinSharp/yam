@@ -27,13 +27,14 @@ Yam is a tuber.
 
 ### Base Types
 
-- Comments - Start with double tilde "\~\~". Everything after \~\~ will be ignored.
-    Example: `~~ This is a comment`  
+- Comments - Start with double tilde "\~\~". Everything after \~\~ will be ignored.  
+    **Example:**  
+    `~~ This is a comment`
 
 - Number - Everything that starts with a digit will be considered a number.
     If programming language distinguishes, it will be further split to integer
     and float/double. Float is a number with a decimal point.  
-    Examples:  
+    **Examples:**  
     `123` is a number/integer  
     `3.14` is a number/float  
     `50%` is converted to a number/float  
@@ -46,9 +47,9 @@ Yam is a tuber.
     To set text over multiple lines, put it inside tripple quotes. Multi line text
     has to be written in the same indent level. as the quotes. All characters from the indent
     towards base indent, will be removed.  
-    Example1:  
+    **Example1:**  
     `"This is text. 3.14 is also considered as text"`  
-    Example2:
+    **Example2:**
     ```
     """
     This text
@@ -63,11 +64,11 @@ Yam is a tuber.
 - Hashtable/Dictionary - Dictionary consists of key, value pairs, where key is
     anything, that starts with a character and end in a column ":".
     Value can be any other type.  
-    Example1:  
+    **Example1:**  
     ```
     key: value
     ```
-    Example2:  
+    **Example2:**  
     ```
     outer_key:
       inner_key1:
@@ -78,7 +79,7 @@ Yam is a tuber.
 
 - List - A list consists of items of any type. List items have to prepend
     a dash and space "- ". For listing items in a single line, seperate items with a bar "|".  
-    Example1:
+    **Example1:**
     ```
     - A
     - list
@@ -89,11 +90,11 @@ Yam is a tuber.
       - items
     - items
     ```
-    Example2:
+    **Example2:**
     ```
     A | list | of | items
     ```
-    Example3:
+    **Example3:**
     ```
     - A
     - list
@@ -113,7 +114,7 @@ Extended types are types, that need references to a custom function for decoding
     A reference to a class with the same name is needed. By default parser will
     search for a decode() method inside the class and pass variables to it,
     if it does not find it, it will use the variables to instantiate the class.  
-    Example:  
+    **Example:**
     ```
     !Object
       variable1: value1
@@ -127,11 +128,11 @@ Extended types are types, that need references to a custom function for decoding
     A reference to a function, that will decode the tag is needed. It can be
     passed as a keyword argument to the parser. The content within tag is passed
     to the decoding function as text.  
-    Example1:
+    **Example1:**
     ```
     <tag>Content</tag>
     ```
-    Example2:
+    **Example2:**
     ```
     <|tag|>
     ```
