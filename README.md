@@ -42,8 +42,8 @@ Yam is a tuber.
     `-2.718` is a negative number/float  
     `50%` is converted to a number/float  
     `1/4` is  converted to a number/float  
-    `0x1B13` is converted from hexadecimal to number  
-    `0b0001` is converted from binary to number
+    `0x1B13` is converted from hexadecimal to number  (unsupported for now)  
+    `0b0001` is converted from binary to number  (unsupported for now)  
 
 - Text - Everything that starts with a letter or a symbol, will be consigered as text.
     It is possible to make everything into text, if it's put in double quotes.
