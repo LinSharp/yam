@@ -19,15 +19,29 @@ object      ->  <OBJECT> ( <INDENT> dictionary )*
 
 # Tokens
 ```
-NUMBER
-TEXT
-MULTILINE
-BOOL
-DICT_KEY
-LIST_ENTRY
-LIST_INNER
-OBJECT
-TAG
-INDENT
-BAR
+NUMBER      ->  124 | 3.14 | 32% | 14/32
+
+TEXT        ->  apple | "3.14 oranges"
+
+MULTILINE   ->  """
+                Multi
+                line
+                text.
+                """
+
+BOOL        ->  true | false
+
+DICT_KEY    ->  key_name:
+
+LIST_ENTRY  ->  '- '
+
+LIST_INNER  ->  '---'
+
+OBJECT      ->  '!Object_name'
+
+TAG         ->  <|tag_name|> | <tag_name>Content</tag_name>
+
+INDENT      ->  '  '
+
+BAR         ->  '|'
 ```
