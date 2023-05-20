@@ -1,4 +1,14 @@
 # Grammar
+
+## Leader
+```
+|  - seperates optons
+() - a group of options
+*  - previos statement is multiplied 0 or more times
+-> - explains how to make the nonterminal
+```
+
+## Dictionary
 ```
 root        ->  ( dictionary | list )
 
