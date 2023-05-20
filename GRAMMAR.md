@@ -49,7 +49,7 @@ LIST_ENTRY  ->  '- '
 
 LIST_INNER  ->  '---'
 
-OBJECT      ->  '!Object_name'
+OBJECT      ->  !Object_name
 
 TAG         ->  <|tag_name|> | <tag_name>Content</tag_name>
 
