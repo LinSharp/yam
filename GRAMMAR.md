@@ -7,8 +7,10 @@ dictionary  ->  <DICT_KEY> (
                 | <INDENT> ( value | object | inline-list | dictionary | list )  
                 )
 
-list        ->  ( <LIST_ENTRY> ( value | dictionary | object | inline-list ) )*  
+list        ->  (
+                <LIST_ENTRY> ( value | dictionary | object | inline-list )  
                 | <LIST_INNER> ( value | dictionary | object | inline-list ) ( <INDENT> list )*
+                )*
 
 inline-list ->  value (<BAR> value)*
 
