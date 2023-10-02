@@ -27,7 +27,7 @@ Yam is a tuber.
 
 ### Base Types
 
-- Comments - Start with double tilde "\~\~". Everything after \~\~ will be ignored.  
+- Comments - Start with double tilde "\~\~". Everything on the line after \~\~ will be ignored.  
     **Example:**  
     `~~ This is a comment`
 
@@ -51,7 +51,10 @@ Yam is a tuber.
     has to be written in the same indent level. as the quotes. All characters from the indent
     towards base indent, will be removed.  
     **Example1:**  
-    `"This is text. 3.14 is also considered as text"`  
+    ```
+    This is text. 
+    "3.14 is also considered as text"  
+    ```
     **Example2:**
     ```
     """
@@ -110,13 +113,11 @@ Yam is a tuber.
 
 Extended types are types, that need references to a custom function or class for decoding.
 
-- Object - An object is represented similary to dictionary. Base key that starts
+- Object/Struct - An object is represented similary to dictionary. Base key that starts
     with an exclamation mark - "!". Inner dictionary key names will be
-    considered as member variable names of the object. Unlike a dictionary base
+    considered as member variable names of the object. Unlike a dictionary, base
     key does not end with a column - ":".  
-    A reference to a class with the same name is needed. By default parser will
-    search for a decode() method inside the class and pass variables to it,
-    if it does not find it, it will use the variables to instantiate the class.  
+    A reference to a class with the same name is needed to instantiate the class.  
     **Example:**
     ```
     !Object
@@ -145,13 +146,7 @@ Extended types are types, that need references to a custom function or class for
     Loads file from path.  
     `<load>Path</load>`  
     **time:** \
-    Formats ISO timestamp.  
-    `<time>1991-08-22</time>`
-    or
-    `<time>24:59:59.999</time>`
-    or
-    `<time>1991-08-22T24:59:59.999</time>`  
-    `<|time|>` - get current ISO time.
+    `<|time|>` - get current UNIX timestamp.
 
 
 ### File structure
