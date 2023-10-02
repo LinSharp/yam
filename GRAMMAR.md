@@ -5,16 +5,17 @@
 |  - seperates optons
 () - a group of options
 *  - previos statement is multiplied 0 or more times
+*1  - previos statement is multiplied 1 or more times
 -> - explains how to make the nonterminal
 ```
 
 ## Dictionary
 ```
-root        ->  ( dictionary | list )
+root        ->  dictionary | list
 
 dictionary  ->  <DICT_KEY> (  
-                value | object | inline-list  
-                | <INDENT> ( value | object | inline-list | dictionary | list )  
+                value | inline-list  
+                | <NEWLINE>(<INDENT>)*1 ( value | object | inline-list | dictionary | list )  
                 )
 
 list        ->  (
@@ -22,7 +23,7 @@ list        ->  (
                 | <LIST_INNER> ( value | dictionary | object | inline-list ) ( <INDENT> list )*
                 )*
 
-inline-list ->  value (<BAR> value)*
+inline-list ->  value (<BAR> value)*1
 
 value       ->  ( <NUMBER> | <TEXT> | <BOOL> | <MULTILINE> | <TAG> )
 
@@ -56,4 +57,6 @@ TAG         ->  <|tag_name|> | <tag_name>Content</tag_name>
 INDENT      ->  '  '
 
 BAR         ->  '|'
+
+NEWLINE     ->  '\n'
 ```

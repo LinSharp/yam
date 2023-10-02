@@ -125,12 +125,15 @@ Extended types are types, that need references to a custom function or class for
       variable3: value3
     ```
 
-- Tag - A tag is made by starting with `<tag_name>`, closing with `</tag_name>`,
+- Tag - A tag is made by starting with `<tag_name>` or `<tag_name/>`, closing with `</tag_name>`,
     and putting content in the middle. Tags that do not need content can be
     done this way: `<|tag_name|>`  
     A reference to a function, that will decode the tag is needed. It can be
     passed as a keyword argument to the parser. The content within tag is passed
     to the decoding function as text.  
+    - Tags that start with `<tag_name>` will pass content between the tags as string to the function.
+    - Tags that start with `<tag_name/>` will be considered as paths to file which contents should be passed to the function.
+
     **Example1:**
     ```
     <tag>Content</tag>
