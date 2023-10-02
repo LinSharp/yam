@@ -149,9 +149,7 @@ Extended types are types, that need references to a custom function or class for
     ```
     **Default tags:**  
     Default tags will be replaced by custom ones with the same name.  
-    **l:** \
     `<l>Path</l>` - load and insert content from external file, if file has .yam extention, it will be parsed.  
-    **time:** \
     `<|time|>` - get current UNIX timestamp.
 
 
