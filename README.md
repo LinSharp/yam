@@ -1,6 +1,5 @@
 # Yam
-## A simple human readable configuration language.
-
+A simple human readable configuration language.  
 Yam is a tuber.
 
 ## Syntax
@@ -45,7 +44,7 @@ Yam is a tuber.
     `0x1B13` is converted from hexadecimal to number  (unsupported for now)  
     `0b0001` is converted from binary to number  (unsupported for now)  
 
-- Text - Everything that starts with a letter or a symbol, will be consigered as text.
+- Text - Everything that starts with a letter or a symbol, will be considered as text.
     It is possible to make everything into text, if it's put in double quotes.
     To set text over multiple lines, put it inside tripple quotes. Multi line text
     has to be written in the same indent level. as the quotes. All characters from the indent
