@@ -142,8 +142,7 @@ Extended types are types, that need references to a custom function or class for
     **Default tags:**  
     Default tags will be replaced by custom ones with the same name.  
     **load:** \
-    Loads file from path.  
-    `<load>Path</load>`  
+    `<load>Path</load>` - load file from path.  
     **time:** \
     `<|time|>` - get current UNIX timestamp.
 
