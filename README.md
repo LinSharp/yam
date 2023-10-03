@@ -10,19 +10,19 @@ Yam is a tuber.
 - version:
     "0.1.2"
 - background:
-    svg: <l>background.svg</l>
+    svg: <load>background.svg</load>
     transparency: 60%
     color: 255|255|255
 - !Display
-    menu: <l>pages/index.html</l>
-    options: <l>pages/options.html</l>
+    menu: <load>pages/index.html</load>
+    options: <load>pages/options.html</load>
     log_path: logs/display.log
     settings:
       width: 1920
       height: 1080
       mode: fullscreen
     show_hidden: false
-- style: <l>style.yam</l>
+- style: <load>style.yam</load>
 ```
 
 ### Base Types
@@ -149,7 +149,7 @@ Extended types are types, that need references to a custom function or class for
     ```
     **Default tags:**  
     Default tags will be replaced by custom ones with the same name.  
-    `<l>Path</l>` - load and insert content from external file, if file has .yam extention, it will be parsed.  
+    `<load>Path</load>` - load and insert content from external file, if file has .yam extention, it will be parsed.  
     `<|time|>` - get current UNIX timestamp.
 
 
