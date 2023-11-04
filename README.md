@@ -96,7 +96,7 @@ Yam is a tuber.
       - items
     - items
     ```
-    **Example2:**
+    **Example2 (for numbers only):**
     ```
     A | list | of | items
     ```
