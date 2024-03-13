@@ -1,12 +1,12 @@
 # Yam
-A simple human readable configuration language.  
+A simple human readable, data oriented configuration language.  
 Yam is a tuber.
 
 ## Syntax
 
 ```
 ~~ Configuring display.
-- <|time|>
+- <time/>
 - version:
     "0.1.2"
 - background:
@@ -14,15 +14,15 @@ Yam is a tuber.
     transparency: 60%
     color: 255|255|255
 - !Display
-    menu: <load>pages/index.html</load>
-    options: <load>pages/options.html</load>
+    menu: <l>pages/index.html</l>
+    options: <l>pages/options.html</l>
     log_path: logs/display.log
     settings:
       width: 1920
       height: 1080
       mode: fullscreen
     show_hidden: false
-- style: <load>style.yam</load>
+- style: <l>style.yam</l>
 ```
 
 ### Base Types
@@ -126,14 +126,14 @@ Extended types are types, that need references to a custom function or class for
       variable3: value3
     ```
 
-- Tag - A tag is made by starting with `<tag_name>` or `<tag_name/>`, closing with `</tag_name>`,
+- Tag - A tag is made by starting with `<tag_name>`, closing with `</tag_name>`,
     and putting content in the middle. Tags that do not need content can be
-    done this way: `<|tag_name|>`  
+    done this way: `<tag_name/>`  
     A reference to a function, that will decode the tag is needed. It can be
     passed as a keyword argument to the parser. The content within tag is passed
     to the decoding function as text.  
     - Tags that start with `<tag_name>` will pass content between the tags as string to the function.
-    - Tags that start with `<tag_name/>` will be considered as paths to file which contents should be passed to the function.
+    - Tags can be added into a pipeline
 
     **Example1:**
     ```
@@ -141,16 +141,15 @@ Extended types are types, that need references to a custom function or class for
     ```
     **Example2:**
     ```
-    <tag/>Path</tag>
+    <l|tag>Path</l|tag>
     ```
     **Example3:**
     ```
-    <|tag|>
+    <tag/>
     ```
     **Default tags:**  
-    Default tags will be replaced by custom ones with the same name.  
-    `<load>Path</load>` - load and insert content from external file, if file has .yam extention, it will be parsed.  
-    `<|time|>` - get current UNIX timestamp.
+    `<l>Path</l>` - load and insert content from external file, if file has .yam extention, it will be parsed.  
+    `<time/>` - get current UNIX timestamp.
 
 
 ### File structure
@@ -176,4 +175,17 @@ Fruits:
     Tasty
   Pears:
     Okay
+```
+
+Base object:
+```
+!Display
+  menu: <l>pages/index.html</l>
+  options: <l>pages/options.html</l>
+  log_path: logs/display.log
+  settings:
+    width: 1920
+    height: 1080
+    mode: fullscreen
+  show_hidden: false
 ```
