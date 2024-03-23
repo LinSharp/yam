@@ -100,14 +100,6 @@ Yam is a tuber.
     ```
     3 | 14 | 159 | 2653
     ```
-    **Example3:**
-    ```
-    - A
-    - list
-    - of
-    - inner | list | of | items
-    - items
-    ```
 
 ### Extended types
 
