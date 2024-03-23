@@ -50,12 +50,12 @@ Yam is a tuber.
     To set text over multiple lines, put it inside tripple quotes. Multi line text
     has to be written in the same indent level. as the quotes. All characters from the indent
     towards base indent, will be removed.  
-    **Example1:**  
+    **Example 1:**  
     ```
     This is text. 
     "3.14 is also considered as text"  
     ```
-    **Example2:**
+    **Example 2:**
     ```
     """
     This text
@@ -70,11 +70,11 @@ Yam is a tuber.
 - Hashtable/Dictionary - Dictionary consists of key, value pairs, where key is
     anything, that starts with a character and end in a column ":".
     Value can be any other type.  
-    **Example1:**  
+    **Example 1:**  
     ```
     key: value
     ```
-    **Example2:**  
+    **Example 2:**  
     ```
     outer_key:
       inner_key1:
@@ -85,7 +85,7 @@ Yam is a tuber.
 
 - List - A list consists of items of any type. List items have to prepend
     a dash and space "- ". For listing items in a single line, seperate items with a bar "|".  
-    **Example1:**
+    **Example 1:**
     ```
     - A
     - list
@@ -97,12 +97,12 @@ Yam is a tuber.
     - items
     ```
 
-    **Example2:**
+    **Example 2:**
     ```
     "John" | "Doe" | 21 | "13.4 €"
     ```
 
-    **Example3:**
+    **Example 3:**
     ```
     - A
     - list
@@ -120,7 +120,7 @@ Extended types are types, that need references to a custom function or class for
     key does not end with a column - ":".  
     A reference to a class with the same name is needed to instantiate the class.
   
-    **Example:**
+    **Example 1:**
     ```
     !Object:
       var1: value1
@@ -128,7 +128,7 @@ Extended types are types, that need references to a custom function or class for
       var3: value3
     ```
 
-    **Example:**
+    **Example 2:**
     ```
     !Object("apples", 12)
     ```
@@ -142,15 +142,15 @@ Extended types are types, that need references to a custom function or class for
     - Tags that start with `<tag_name>` will pass content between the tags as string to the function
     - Tags can be added into a pipeline using vertical bar - "|" between tags
 
-    **Example1:**
+    **Example 1:**
     ```
     <tag>Content</tag>
     ```
-    **Example2:**
+    **Example 2:**
     ```
     <l|tag>Path</l|tag>
     ```
-    **Example3:**
+    **Example 3:**
     ```
     <tag/>
     ```
