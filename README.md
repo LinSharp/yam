@@ -12,8 +12,8 @@ Yam is a tuber.
 - background:
     svg: <l>background.svg</l>
     transparency: 60%
-    color: 255|255|255
-- !Display
+    color: !Color(255,255,255)
+- !Display:
     menu: <l>pages/index.html</l>
     options: <l>pages/options.html</l>
     log_path: logs/display.log
@@ -96,11 +96,20 @@ Yam is a tuber.
       - items
     - items
     ```
-    **Example2 (for numbers only):**
+
+    **Example2:**
     ```
-    3 | 14 | 159 | 2653
+    "John" | "Doe" | 21 | "13.4 €"
     ```
 
+    **Example3:**
+    ```
+    - A
+    - list
+    - of
+    - "inner" | "list" | "of" | "items"
+    - items
+    
 ### Extended types
 
 Extended types are types, that need references to a custom function or class for decoding.
@@ -109,13 +118,19 @@ Extended types are types, that need references to a custom function or class for
     with an exclamation mark - "!". Inner dictionary key names will be
     considered as member variable names of the object. Unlike a dictionary, base
     key does not end with a column - ":".  
-    A reference to a class with the same name is needed to instantiate the class.  
+    A reference to a class with the same name is needed to instantiate the class.
+  
     **Example:**
     ```
-    !Object
-      variable1: value1
-      variable2: value2
-      variable3: value3
+    !Object:
+      var1: value1
+      var2: value2
+      var3: value3
+    ```
+
+    **Example:**
+    ```
+    !Object("apples", 12)
     ```
 
 - Tag - A tag is made by starting with `<tag_name>`, closing with `</tag_name>`,
@@ -124,8 +139,8 @@ Extended types are types, that need references to a custom function or class for
     A reference to a function, that will decode the tag is needed. It can be
     passed as a keyword argument to the parser. The content within tag is passed
     to the decoding function as text.  
-    - Tags that start with `<tag_name>` will pass content between the tags as string to the function.
-    - Tags can be added into a pipeline
+    - Tags that start with `<tag_name>` will pass content between the tags as string to the function
+    - Tags can be added into a pipeline using vertical bar - "|" between tags
 
     **Example1:**
     ```
@@ -171,7 +186,7 @@ Fruits:
 
 Base object:
 ```
-!Display
+!Display:
   menu: <l>pages/index.html</l>
   options: <l>pages/options.html</l>
   log_path: logs/display.log
