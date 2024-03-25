@@ -13,7 +13,7 @@ Yam is a tuber.
     svg: <l>background.svg</l>
     transparency: 60%
     color: !Color(255,255,255)
-- !Display:
+- !Display
     menu: <l>pages/index.html</l>
     options: <l>pages/options.html</l>
     log_path: logs/display.log
@@ -122,7 +122,7 @@ Extended types are types, that need references to a custom function or class for
   
     **Example 1:**
     ```
-    !Object:
+    !Object
       var1: value1
       var2: value2
       var3: value3
@@ -186,7 +186,7 @@ Fruits:
 
 Base object:
 ```
-!Display:
+!Display
   menu: <l>pages/index.html</l>
   options: <l>pages/options.html</l>
   log_path: logs/display.log
