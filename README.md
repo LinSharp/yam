@@ -1,5 +1,5 @@
 # Yam
-A simple human readable, data oriented configuration language.  
+A simple human writable, data oriented configuration language.  
 Yam is a tuber.
 
 ## Syntax
