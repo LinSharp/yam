@@ -10,7 +10,7 @@ Yam is a tuber.
 - version:
     "0.1.2"
 - background:
-    svg: <lsvg>background.svg</l>
+    svg: <l>background.svg</l>
     transparency: 60%
     color: !Color(255,255,255)
 - !Display
