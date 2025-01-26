@@ -139,7 +139,8 @@ Extended types are types, that need references to a custom function or class for
     A reference to a function, that will decode the tag is needed.
     The content within tag is passed to the decoding function as text.  
     - Tags that start with `<tag_name>` will pass content between the tags as string to the function
-    - Tags can be added into a pipeline using vertical bar - "|" between tags
+    - Tags can be added into a pipeline using vertical bar - "|" between tags, which means that the
+      result of the left tag will be passed into right tag.
 
     **Example 1:**
     ```
