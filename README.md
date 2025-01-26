@@ -176,7 +176,7 @@ Base dictionary:
 Dozen:
   12
 PI:
-  3.14
+  3.14159
 Fruits:
   Apples:
     Tasty
